@@ -4418,6 +4418,35 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 					gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, ReinforcementUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), ReinforcementUnit->getX(), ReinforcementUnit->getY(), true, true);
 				}
 
+				// we need to find an alternative since the Player seems to have not gotten a proper city
+				// we just give the player more land Units in his Capitol but no Sea Units
+				else
+				{
+					int reinforcementAmountLandAdditional = reinforcementAmountLand + 1;
+					int reinforcementAmountArtilAdditional = reinforcementAmountArtil + 1;
+
+					int iLoopX;
+					CvCity* locationToAppearNoCoast = kPlayer.firstCity(&iLoopX);
+
+					// for safety because it is not sure the Player has a City
+					if (locationToAppearNoCoast != NULL)
+					{
+						for (int i=0;i<reinforcementAmountLandAdditional;i++)
+						{
+							ReinforcementUnit = kPlayer.initUnit(KingReinforcementTypeLand, GC.getUnitInfo(KingReinforcementTypeLand).getDefaultProfession(), locationToAppearNoCoast->getX_INLINE(), locationToAppearNoCoast->getY_INLINE(), NO_UNITAI);
+						}
+
+						for (int i=0;i<reinforcementAmountArtilAdditional;i++)
+						{
+							ReinforcementUnit = kPlayer.initUnit(KingReinforcementTypeArtil, GC.getUnitInfo(KingReinforcementTypeArtil).getDefaultProfession(), locationToAppearNoCoast->getX_INLINE(), locationToAppearNoCoast->getY_INLINE(), NO_UNITAI);
+						}
+					
+						//sending message
+						CvWString szBuffer = gDLL->getText("TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER");
+						gDLL->getInterfaceIFace()->addMessage(ePlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, ReinforcementUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), ReinforcementUnit->getX(), ReinforcementUnit->getY(), true, true);
+					}
+				}
+
 				// WTP, ray, giving reinforcement to other Player as well - START
 				CvUnit* ReinforcementOtherPlayerUnit = NULL;
 				CvPlayer& otherPlayer = GET_PLAYER(enemyID);
@@ -4427,7 +4456,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 				int iLoopOther;
 				for (pLoopOtherPlayerCity = otherPlayer.firstCity(&iLoopOther); pLoopOtherPlayerCity != NULL; pLoopOtherPlayerCity = otherPlayer.nextCity(&iLoopOther))
 				{
-					if (pLoopOtherPlayerCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()))
+					if (pLoopOtherPlayerCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()) && pLoopOtherPlayerCity->plot()->hasDeepWaterCoast())
 					{
 						locationOtherPlayerToAppear = pLoopOtherPlayerCity;
 						break;
@@ -4453,6 +4482,36 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 					//sending message
 					CvWString szBuffer = gDLL->getText("TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER");
 					gDLL->getInterfaceIFace()->addMessage(enemyID, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, ReinforcementOtherPlayerUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), ReinforcementOtherPlayerUnit->getX(), ReinforcementOtherPlayerUnit->getY(), true, true);
+				}
+
+				// we need to find an alternative since the other Player seems to have not gotten a proper city
+				// we just give the player more land Units in his Capitol but no Sea Units
+				else
+				{
+					int reinforcementAmountLandAdditionalOther = reinforcementAmountLand + 1;
+					int reinforcementAmountArtilAdditionalOther = reinforcementAmountArtil + 1;
+
+					int iLoopY;
+					CvCity* locationToAppearNoCoastOther = otherPlayer.firstCity(&iLoopY);
+
+					// for safety because it is not sure the other Player has a City
+					if (locationToAppearNoCoastOther != NULL)
+					{
+						for (int i=0;i<reinforcementAmountLandAdditionalOther;i++)
+						{
+							ReinforcementOtherPlayerUnit = otherPlayer.initUnit(KingReinforcementTypeLand, GC.getUnitInfo(KingReinforcementTypeLand).getDefaultProfession(), locationToAppearNoCoastOther->getX_INLINE(), locationToAppearNoCoastOther->getY_INLINE(), NO_UNITAI);
+						}
+
+						for (int i=0;i<reinforcementAmountArtilAdditionalOther;i++)
+						{
+							ReinforcementOtherPlayerUnit = otherPlayer.initUnit(KingReinforcementTypeArtil, GC.getUnitInfo(KingReinforcementTypeArtil).getDefaultProfession(), locationToAppearNoCoastOther->getX_INLINE(), locationToAppearNoCoastOther->getY_INLINE(), NO_UNITAI);
+						}
+
+						//sending message
+						CvWString szBuffer = gDLL->getText("TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER");
+						gDLL->getInterfaceIFace()->addMessage(enemyID, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, ReinforcementOtherPlayerUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), ReinforcementOtherPlayerUnit->getX(), ReinforcementOtherPlayerUnit->getY(), true, true);
+					}
+
 				}
 				// WTP, ray, giving reinforcement to other Player as well - END
 			}
@@ -16527,6 +16586,13 @@ int CvPlayer::getEuropeUnitBuyPrice(UnitTypes eUnit, bool bIncrease) const
 	}
 	// TAC - AI purchases military units - koma13 - END
 
+	// WTP, ray, capping UnitBuyPrices at 200 percent - START
+	if (iCost > kUnit.getEuropeCost() * 2)
+	{
+		iCost = kUnit.getEuropeCost() * 2;
+	}
+	// WTP, ray, capping UnitBuyPrices at 200 percent - END
+
 	iCost *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 	iCost /= 100;
 
@@ -17902,6 +17968,13 @@ int CvPlayer::getAfricaUnitBuyPrice(UnitTypes eUnit) const
 
 	iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getAfricaCostIncrease();
 
+	// WTP, ray, capping UnitBuyPrices at 200 percent - START
+	if (iCost > kUnit.getAfricaCost() * 2)
+	{
+		iCost = kUnit.getAfricaCost() * 2;
+	}
+	// WTP, ray, capping UnitBuyPrices at 200 percent - END
+
 	iCost *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 	iCost /= 100;
 
@@ -18001,6 +18074,13 @@ int CvPlayer::getPortRoyalUnitBuyPrice(UnitTypes eUnit) const
 	}
 
 	iCost += GET_TEAM(getTeam()).getUnitsPurchasedHistory((UnitClassTypes) kUnit.getUnitClassType()) * kUnit.getPortRoyalCostIncrease();
+
+	// WTP, ray, capping UnitBuyPrices at 200 percent - START
+	if (iCost > kUnit.getPortRoyalCost() * 2)
+	{
+		iCost = kUnit.getPortRoyalCost() * 2;
+	}
+	// WTP, ray, capping UnitBuyPrices at 200 percent - END
 
 	iCost *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
 	iCost /= 100;
@@ -19527,7 +19607,35 @@ int CvPlayer::getHurryGold(HurryTypes eHurry, int iIndex) const
 	iGold += GC.getHurryInfo(eHurry).getFlatGold() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 100;
 	if (iIndex != -1)
 	{
-		int iImmigrationPrice = std::abs(getEuropeUnitBuyPrice(getDocksNextUnit(iIndex))) * iCrossesLeft / std::max(1, iThreshold);
+		// WTP, ray, disconnect hurry Gold on Docks from Unit Buy Price - START
+		// instead hurrying will never be more expensive than original buy price
+		int iMaxBuyPriceHurry = GC.getUnitInfo(getDocksNextUnit(iIndex)).getEuropeCost();
+		iMaxBuyPriceHurry *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+		iMaxBuyPriceHurry /= 100;
+
+		iMaxBuyPriceHurry *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getTrainPercent();
+		iMaxBuyPriceHurry /= 100;
+
+		for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
+		{
+			if (hasTrait((TraitTypes) iTrait))
+			{
+				iMaxBuyPriceHurry *= std::max(0, (100 - GC.getTraitInfo((TraitTypes) iTrait).getRecruitPriceDiscount()));
+				iMaxBuyPriceHurry /= 100;
+			}
+		}
+
+		if (!isHuman())
+		{
+			iMaxBuyPriceHurry *= GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAITrainPercent();
+			iMaxBuyPriceHurry /= 100;
+
+			iMaxBuyPriceHurry *= std::max(0, ((GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIPerEraModifier() * getCurrentEra()) + 100));
+			iMaxBuyPriceHurry /= 100;
+		}
+
+		int iImmigrationPrice = std::abs(iMaxBuyPriceHurry) * iCrossesLeft / std::max(1, iThreshold);
+		// WTP, ray, disconnect hurry Gold on Docks from Unit Buy Price - END
 		iGold = std::min(iGold, iImmigrationPrice);
 	}
 
@@ -24654,6 +24762,20 @@ int CvPlayer::getNumTradeGroups() const
 
 // R&R mod, vetiarvind, trade groups - end
 
+CvCivilizationInfo& CvPlayer::getCivilizationInfo() const
+{
+	return GC.getCivilizationInfo(getCivilizationType());
+}
+
+BuildingTypes CvPlayer::getBuildingType(BuildingClassTypes eBuildingClass) const
+{
+	return (BuildingTypes)getCivilizationInfo().getCivilizationBuildings(eBuildingClass);
+}
+
+UnitTypes CvPlayer::getUnitType(UnitClassTypes eUnitClass) const
+{
+	return (UnitTypes)getCivilizationInfo().getCivilizationUnits(eUnitClass);
+}
 
 namespace
 {

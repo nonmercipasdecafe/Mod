@@ -16,7 +16,7 @@
             <Plural>1</Plural>
         </German>
     </TEXT>
-	<TEXT>
+    <TEXT>
         <Tag>TXT_KEY_UNITCLASS_GOATS</Tag>
         <English>Goats</English>
         <French>Chèvres</French>
@@ -38,7 +38,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOATS_PEDIA</Tag>
-        <English>[TAB][H1]Goats[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Goats[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Goats[COLOR_REVERT] can be raised on flatlands on [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist herd goats, assign him to the [LINK=PROFESSION_GOATHERD]goatherd[\LINK] profession.[NEWLINE]Goat production is highest on plots bearing the [LINK=BONUS_GOAT]goat[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on goat-producing plots and employing [LINK=UNIT_GOATHERD]expert goatherds[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Goats will eat vegetation that most other domesticated livestock decline, so they can subsist on very poor land. The number of animals that a goat farmer can sustain depends on the quality of the pasture. A poor man with poor land can still raise goats.[NEWLINE]Perhaps because of their adaptability, goats have become a symbol of evil. Witches are said to cavort with goats. Satan has goat horns.</English>
         <German>[TAB][H1]Ziegen[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -48,7 +48,7 @@
     <TEXT>
         <Tag>TXT_KEY_UNIT_SHEEP_STRATEGY</Tag>
         <English>Can be left empty</English>
-    </TEXT>	
+    </TEXT>
 	<!-- PIGS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIGS</Tag>
@@ -82,7 +82,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIGS_PEDIA</Tag>
-        <English>[TAB][H1]Pigs[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Pigs[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pigs[COLOR_REVERT] can be raised on flatlands on [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist raise pigs, assign him to the [LINK=PROFESSION_PIG_FARMER]pig farmer[\LINK] profession.[NEWLINE]Pig production is highest on plots bearing the [LINK=BONUS_PIG]pig[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on pig-producing plots and employing [LINK=UNIT_GOATHERD]expert pig farmers[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Historically a few pigs would be kept near the owner's residence. They could be tethered in a simple shelter or kept in a pen outside the owner's house.[NEWLINE]Hog farming is when pigs are bred on a domestic or industrial scale. Pigs are raised for food and skins.[NEWLINE]They're valued for their ability to convert inedible food into meat and manure, and can be fed household food waste. On a large scale pigs are one way to dispose of municipal garbage.</English>
         <German>[TAB][H1]Schweine[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -96,7 +96,7 @@
 	<!-- CHICKEN -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHICKEN</Tag>
-        <English>Chicken</English>
+        <English>Chickens</English>
         <French>Poules</French>
         <German>
             <Text>Hühner</Text>
@@ -106,7 +106,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_CHICKEN</Tag>
-        <English>Chicken</English>
+        <English>Chickens</English>
         <French>Poules</French>
         <German>
             <Text>Hühner</Text>
@@ -116,7 +116,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CHICKEN</Tag>
-        <English>Chicken</English>
+        <English>Chickens</English>
         <French>Poules</French>
         <German>
             <Text>Hühner</Text>
@@ -126,7 +126,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CHICKEN_PEDIA</Tag>
-        <English>[TAB][H1]Chicken[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Chicken[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Chickens[COLOR_REVERT] can be raised on flatlands on [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist raise chickens, assign him to the [LINK=PROFESSION_CHICKEN_FARMER]chicken farmer[\LINK] profession.[NEWLINE]Chicken production is highest on plots bearing the [LINK=BONUS_CHICKEN]chicken[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on chicken-producing plots and employing [LINK=UNIT_CHICKEN_FARMER]expert chicken farmers[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Free-range poultry farming allows chickens to roam during the day, although they are usually confined in coops at night to protect them from predators. They're also kept indoors when the weather is bad.</English>
         <German>[TAB][H1]Hühner[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -170,7 +170,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GEESE_PEDIA</Tag>
-        <English>[TAB][H1]Domestic Geese[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Domestic Geese[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Geese[COLOR_REVERT] can be raised on flatlands on [LINK=TERRAIN_GRASS]grass[\LINK] or [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain. To make a colonist raise geese, assign him to the [LINK=PROFESSION_GOOSE_FARMER]goose farmer[\LINK] profession.[NEWLINE]Goose production is highest on plots bearing the [LINK=BONUS_GOOSE]goose[\LINK] bonus, and can be increased by building [LINK=IMPROVEMENT_RANCH]ranches[\LINK] on goose-producing plots and employing [LINK=UNIT_GOOSE_FARMER]expert goose farmers[\LINK]. These experts can be trained in Native villages or hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Geese are the fastest growers among domestic birds. They're hardy and disease free when given constant care. Geese can be brought up on green pasture, which lowers production cost substantially.</English>
         <German>[TAB][H1]Hausgänse[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -214,7 +214,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOAT_HIDES_PEDIA</Tag>
-        <English>[TAB][H1]Goat Hides[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Goat Hides[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Goat hides[COLOR_REVERT] come from butchered  [LINK=YIELD_GOATS]goats[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_BUTCHER_GOATS]goat butcher[\LINK] profession in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades. The output of goat hides can be doubled by commissioning [LINK=UNIT_BUTCHER]master butchers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The goat is one of the oldest domesticated animals. There's archaeological evidence for goats in Iran 10,000 years ago. Goats are used for milk, meat, fur, and skins across much of the world.</English>
         <German>[TAB][H1]Ziegenfelle[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -228,7 +228,7 @@
 	<!-- PIG_SKIN -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_SKIN</Tag>
-        <English>Pig Skins</English>
+        <English>Pigskins</English>
         <French>Peaux de porcs</French>
         <German>
             <Text>Schweinehäute</Text>
@@ -238,7 +238,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIG_SKIN</Tag>
-        <English>Pig Skins</English>
+        <English>Pigskins</English>
         <French>Peaux de porcs</French>
         <German>
             <Text>Schweinehäute</Text>
@@ -248,7 +248,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PIG_SKIN</Tag>
-        <English>Pig Skins</English>
+        <English>Pigskins</English>
         <French>Peaux de porcs</French>
         <German>
             <Text>Schweinehäute</Text>
@@ -258,7 +258,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_SKIN_PEDIA</Tag>
-        <English>[TAB][H1]Pig Skins[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Pig Skins[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pigskins[COLOR_REVERT] come from butchered [LINK=YIELD_PIGS]pigs[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_BUTCHER_PIGS]pig butcher[\LINK] profession in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades. The output of pigskins can be doubled by commissioning [LINK=UNIT_BUTCHER]master butchers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pigskin is softer than cow leather and is preferred for detailed items such as gloves. Pigskin jackets are more supple than the heavier cow leather jacket, which however is more durable. Pig leather is easier to work, so garments typically have a finer finish.</English>
         <German>[TAB][H1]Schweinehäute[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -272,7 +272,7 @@
 	<!-- DOWNS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_DOWNS</Tag>
-        <English>Downs</English>
+        <English>Down</English>
         <French>Duvet</French>
         <German>
             <Text>Daunen</Text>
@@ -282,7 +282,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_DOWNS</Tag>
-        <English>Downs</English>
+        <English>Down</English>
         <French>Duvet</French>
         <German>
             <Text>Daunen</Text>
@@ -292,7 +292,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_DOWNS</Tag>
-        <English>Downs</English>
+        <English>Down</English>
         <French>Duvet</French>
         <German>
             <Text>Daunen</Text>
@@ -302,7 +302,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_DOWNS_PEDIA</Tag>
-        <English>[TAB][H1]Downs[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Downs[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Down[COLOR_REVERT] comes from butchered [LINK=YIELD_GEESE]geese[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_BUTCHER_GEESE]goose butcher[\LINK] profession in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades. The output of down can be doubled by commissioning [LINK=UNIT_BUTCHER]master butchers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Down is the warm inner feathers plucked from waterfowl. It's used as a lightweight insulator in clothing and bedding.</English>
         <German>[TAB][H1]Daunen[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -326,7 +326,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_WILD_FEATHERS</Tag>
-        <English>Wildbird Feathers</English>
+        <English>Wild Bird Feathers</English>
         <French>Plumes</French>
         <German>
             <Text>Wildvogelfedern</Text>
@@ -336,7 +336,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_WILD_FEATHERS</Tag>
-        <English>Wildbird Feathers</English>
+        <English>Wild Bird Feathers</English>
         <French>Plumes</French>
         <German>
             <Text>Wildvogelfedern</Text>
@@ -346,7 +346,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_WILD_FEATHERS_PEDIA</Tag>
-        <English>[TAB][H1]Wildbird Feathers[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Wildbird Feathers[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Wild bird feathers[COLOR_REVERT] come from [LINK=YIELD_GEESE]wild birds[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_HUNTER_BIRDS]bird hunter[\LINK] profession. The output of wild bird feathers can be doubled by commissioning [LINK=UNIT_HUNTER]expert hunters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Wild bird feathers were valued for clothing decoration, hats in particular. The biggest demand was for feathers from brightly coloured tropical birds.</English>
         <German>[TAB][H1]Wildvogelfedern[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -390,7 +390,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_GOAT_HIDE_BOOTS_PEDIA</Tag>
-        <English>[TAB][H1]Goathide Boots[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Goathide Boots[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Goat hide boots[COLOR_REVERT] are made from [LINK=YIELD_GOAT_HIDE]goat hide[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_TAILOR_LEATHER]leather tailor[\LINK] profession in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades. The output of goat hide boots can be doubled by commissioning [LINK=UNIT_TAILOR]master tailors[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Goat hide can be used for finely crafted dress boots, gloves for the feet, or the boots can be insulated for cold weather use.</English>
         <German>[TAB][H1]Ziegenlederstiefel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -404,7 +404,7 @@
 	<!-- PIG_LEATHER -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_LEATHER</Tag>
-        <English>Pigleather Aprons</English>
+        <English>Pig Leather Aprons</English>
         <French>Tabliers en peau de porc</French>
         <German>
             <Text>Schweinelederschürzen</Text>
@@ -414,7 +414,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_PIG_LEATHER</Tag>
-        <English>Pigleather Aprons</English>
+        <English>Pig Leather Aprons</English>
         <French>Tabliers en peau de porc</French>
         <German>
             <Text>Schweinelederschürzen</Text>
@@ -424,7 +424,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_PIG_LEATHER</Tag>
-        <English>Pigleather Aprons</English>
+        <English>Pig Leather Aprons</English>
         <French>Tabliers en peau de porc</French>
         <German>
             <Text>Schweinelederschürzen</Text>
@@ -434,7 +434,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PIG_LEATHER_PEDIA</Tag>
-        <English>[TAB][H1]Pigleather Aprons[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Pig Leather Aprons[\H1][PARAGRAPH:2][BOLDStrategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pig leather aprons[COLOR_REVERT] are made from [LINK=YIELD_PIG_SKINS]pigskins[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_TAILOR_LEATHER]leather tailor[\LINK] profession in the [LINK=BUILDING_TAYLORS_HOUSE]tailor's house[\LINK] or one of its upgrades. The output of pig leather aprons can be doubled by commissioning [LINK=UNIT_TAILOR]master tailors[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Pig leather aprons are hard-wearing work clothing, used by blacksmiths to block sparks from the forge and by butchers in case knives slip.</English>
         <German>[TAB][H1]Schweinelederschürzen[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -448,7 +448,7 @@
 	<!-- FRUITS -->
     <TEXT>
         <Tag>TXT_KEY_YIELD_FRUITS</Tag>
-        <English>Fruits</English>
+        <English>Fruit</English>
         <French>Fruits</French>
         <German>
             <Text>Früchte</Text>
@@ -458,7 +458,7 @@
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_UNITCLASS_FRUITS</Tag>
-        <English>Fruits</English>
+        <English>Fruit</English>
         <French>Fruits</French>
         <German>
             <Text>Früchte</Text>
@@ -468,7 +468,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_FRUITS</Tag>
-        <English>Fruits</English>
+        <English>Fruit</English>
         <French>Fruits</French>
         <German>
             <Text>Früchte</Text>
@@ -478,7 +478,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FRUITS_PEDIA</Tag>
-        <English>[TAB][H1]Fruits[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Fruit[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Fruit[COLOR_REVERT] grows on many different terrains. To harvest it, a colonist needs to have the [LINK=PROFESSION_FRUITS_PICKER]fruit picker[\LINK] profession. The fruit harvest can be doubled by commissioning [LINK=UNIT_FRUITS_PICKER]expert fruit pickers[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Because the fruit varieties mature at different times throughout the season, fruit pickers are often migrant, moving among the orchards and farms as needed. In the tropics fruit grows year-round. Bananas are the world's most popular fruit. Apples are common in temperate zones, and some berries grow in the taiga or tundra.</English>
         <German>[TAB][H1]Früchte[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -522,7 +522,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HOOCH_PEDIA</Tag>
-        <English>[TAB][H1]Hooch[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Fruit Brandy[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Fruit brandy and liqueurs[COLOR_REVERT] are made from a variety of [LINK=YIELD_FRUITS]fruits[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_DISTILLER]distiller\LINK] profession in the [LINK=BUILDING_DISTILLERS_HOUSE]distiller's house[\LINK] or one of its upgrades. The output of fruit brandies can be doubled by commissioning [LINK=UNIT_DISTILLER]master distillers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Fruit brandy can be distilled from different orchard fruits or field berries. The liquor can be distilled until it's clear, much like a light-flavoured vodka.[NEWLINE]Flavoured liqueurs made from fruit are popular in monasteries.</English>
         <German>[TAB][H1]Schnapps[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -566,7 +566,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_FLAX_PEDIA</Tag>
-        <English>[TAB][H1]Flax[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Flax[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Flax[COLOR_REVERT] grows on many different terrains. To harvest it, a colonist needs to have the [LINK=PROFESSION_FLAX_PICKER]flax picker[\LINK] profession. The flax harvest can be doubled by commissioning [LINK=UNIT_FLAX_PICKER]expert flax pickers[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Linen fabrics woven from wild flax date back over 30,000 years. Devout colonists all know that linen is frequently mentioned in the Bible.[NEWLINE]Linen is comfortable to wear in hot weather. The fabric is strong and absorbent, though it does wrinkle.</English>
         <German>[TAB][H1]Flachs[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -610,7 +610,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_PADDED_FURNITURE_PEDIA</Tag>
-        <English>[TAB][H1]Padded Furniture[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Padded Furniture[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Upholstered furniture is made from [LINK=YIELD_LEATHER]leather[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_CABINET_MAKER]cabinet maker[\LINK] profession in the [LINK=BUILDING_CABINET_MAKERS_HOUSE]cabinet maker's house[\LINK] or one of its upgrades. Upholstered furniture output can be doubled by commissioning [LINK=UNIT_CABINET_MAKER]master cabinet makers[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Rugged wooden furniture is all well and good for settlers out on the frontier, but citizens who've earned a little comfort appreciate an easy chair and a big soft couch to sink into. They'll pay extra for that pleasure, which is why the upholsterer is in a good trade.</English>
         <German>[TAB][H1]Gepolsterte Möbel[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -654,7 +654,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_HARDWOOD_PEDIA</Tag>
-        <English>[TAB][H1]Hardwood[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Hardwood[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Hardwood[COLOR_REVERT] grows in [LINK=TERRAIN_FOREST]forests[\LINK] and [LINK=TERRAIN_JUNGLE]jungles[\LINK]. To harvest it, a colonist needs to have the [LINK=PROFESSION_LUMBERJACK_HARDWOOD]lumberjack[\LINK] profession. The hardwood harvest can be doubled by commissioning [LINK=UNIT_LUMBERJACK]expert lumberjacks[\LINK] who can be hired in Europe or trained in Native villages. Hardwood is needed to build large ships.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Hardwood comes from deciduous trees. Softwood, the most common type of lumber, is from evergreens.[NEWLINE]Hardwood is used for fuel, tools, construction, boat building, furniture making, musical instruments, flooring, cooking, barrels, and the manufacture of charcoal. The density adds to durability, appearance, and performance.</English>
         <German>[TAB][H1]Hartholz[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -698,7 +698,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_MAPLE_SIRUP_PEDIA</Tag>
-        <English>[TAB][H1]Maple Sirup[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Maple Syrup[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Maple syrup[COLOR_REVERT] is the sap from maple trees, which grow in [LINK=TERRAIN_FOREST]forests[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]maple syrup collector[\LINK] profession. The maple syrup supply can be doubled by commissioning [LINK=UNIT_MAPLE_SIRUP_COLLECTOR]expert maple syrup collectors[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]In the spring when sap starts to flow in the maple forests, tappers hammer spouts into the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. It can also be poured on snow to make maple sugar.</English>
         <German>[TAB][H1]Ahornsaft[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -742,7 +742,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_YERBA_LEAVES_PEDIA</Tag>
-        <English>[TAB][H1]Yerba Leaves[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Yerba Leaves[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Yerba leaves[COLOR_REVERT] come from the yerba plant which grows in [LINK=TERRAIN_JUNGLE]jungles[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_YERBA_PLANTER]yerba planter[\LINK] profession. The yerba leaf supply can be doubled by commissioning [LINK=UNIT_YERBA_PLANTER]expert yerba planters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The Guarani and Tupi cultivated yerba mate prior to European colonization. After the Jesuits started using it, yerba mate became widespread in what's now Paraguay and throughout other Spanish colonies.[NEWLINE]Yerba leaves are steeped in hot water to make a caffeinated beverage: yerba mate. Brewed cold, it is used to make terere.</English>
         <German>[TAB][H1]Yerbablätter[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -786,7 +786,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_LOGWOOD_PEDIA</Tag>
-        <English>[TAB][H1]Logwood[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Logwood[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Logwood[COLOR_REVERT] is found in [LINK=TERRAIN_JUNGLE]jungles[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_LOGWOOD_COLLECTOR]logwood collector[\LINK] profession. The logwood harvest can be doubled by commissioning [LINK=UNIT_LOGWOOD_COLLECTOR]expert logwood collectors[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]The tree was of great economic importance in the colonial era when it was exported to Europe for dyeing fabrics. Defying Spanish territorial claims, foreign sailors cut and collected trees for shipment back to Europe. Spain responded by commissioning privateers to attack them.[NEWLINE]Under attack from Spanish privateers, logwood cutters formed their own pirate crews to raid the Spanish. Blackbeard turned captured logwood sloops into pirate ships.</English>
         <German>[TAB][H1]Färbholz[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -830,7 +830,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_YERBA_TEA_PEDIA</Tag>
-        <English>[TAB][H1]Yerba Tea[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Yerba Tea[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Yerba tea is made from [LINK=YIELD_YERBA]yerba leaves[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_YERBA_TRADER]yerba tea trader[\LINK] profession in the [LINK=BUILDING_YERBA_TRADERS_HOUSE]yerba trader's house[\LINK] or one of its upgrades. Yerba tea output can be doubled by commissioning [LINK=UNIT_YERBA_TRADER]master yerba traders[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Getting started in the yerba trade meant dealing with two especially dangerous Indigenous nations: the Guarani and Tupi. To add to the challenge, it was found in only two regions, Amambay and Alto Parana. After the Jesuits started using it, yerba mate became widespread in what's now Paraguay and throughout other Spanish colonies.</English>
         <German>[TAB][H1]Yerbatee[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -874,7 +874,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COLOURED_WOOL_CLOTH_PEDIA</Tag>
-        <English>[TAB][H1]Coloured Wool Cloth[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Coloured Wool Cloth[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Yerba tea is made from [LINK=YIELD_YERBA]yerba leaves[\LINK]. To do this, a colonist needs to have the [LINK=PROFESSION_YERBA_TRADER]yerba tea trader[\LINK] profession in the [LINK=BUILDING_YERBA_TRADERS_HOUSE]yerba trader's house[\LINK] or one of its upgrades. Yerba tea output can be doubled by commissioning [LINK=UNIT_YERBA_TRADER]master yerba traders[\LINK] who can be hired in Europe.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Getting started in the yerba trade meant dealing with two especially dangerous Indigenous nations: the Guarani and Tupi. To add to the challenge, it was found in only two regions, Amambay and Alto Parana. After the Jesuits started using it, yerba mate became widespread in what's now Paraguay and throughout other Spanish colonies.</English>
         <German>[TAB][H1]Gefärbter Wollstoff[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -918,7 +918,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_CLAY_PEDIA</Tag>
-        <English>[TAB][H1]Vanilla[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Clay[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Clay[COLOR_REVERT] is found on [LINK=TERRAIN_HILLS]hills[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_CLAY_MINER]clay miner[\LINK] profession. The supply of clay can be doubled by commissioning [LINK=UNIT_PEAT_CUTTER]expert peat and clay cutters[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Clay develops plasticity when wet, due to a molecular film of water surrounding the clay particles, but becomes hard, brittle and non-plastic upon drying or firing. Shale, formed largely from clay, is the most common sedimentary rock.[NEWLINE]Clay is the oldest known ceramic material. Prehistoric humans used it for making pottery. Early pottery shards have been dated to 14,000 BC, and clay tablets are the first known writing medium.</English>
         <German>[TAB][H1]Vanille[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>
@@ -962,7 +962,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_YIELD_COAL_PEDIA</Tag>
-        <English>[TAB][H1]Coal[\H1][PARAGRAPH:2][BOLD] TODO, use other Yield Enty as example</English>
+        <English>[TAB][H1]Coal[\H1][PARAGRAPH:2][BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT] is found on [LINK=TERRAIN_HILLS]hills[\LINK]. To collect it, a colonist needs to have the [LINK=PROFESSION_COAL_MINER]coal miner[\LINK] profession. The supply of coal can be doubled by commissioning [LINK=UNIT_MINER]expert miners[\LINK] who can be hired in Europe or trained in Native villages.[PARAGRAPH:2][BOLD]Background :[\BOLD][NEWLINE]Coal mining causes premature death and illness, but it's a soft rock that doesn't need as many explosives as hard rock mining. Even though it's a job where labourers use picks and shovels, and don't get paid much, their daughters are proud of them.</English>
         <German>[TAB][H1]Kohle[\H1][PARAGRAPH:2][BOLD] TODO, anderen Yield Eintrag als Beispiel nehmen</German>
     </TEXT>
     <TEXT>

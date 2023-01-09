@@ -299,6 +299,10 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -586,6 +590,10 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -766,6 +774,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -952,6 +964,10 @@
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
                     <FeatureType>FEATURE_MEADOW</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
@@ -1132,6 +1148,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bMakesValid>1</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bMakesValid>1</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -1364,6 +1384,17 @@
                     <YieldChanges>
                         <YieldIntegerPair>
                             <YieldType>YIELD_BARLEY</YieldType>
+                            <iValue>1</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
+                    <BonusType>BONUS_WHEAT</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FOOD</YieldType>
                             <iValue>1</iValue>
                         </YieldIntegerPair>
                     </YieldChanges>
@@ -1610,7 +1641,7 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
-                    <bMakesValid>0</bMakesValid>
+                    <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
@@ -1831,6 +1862,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -2071,6 +2106,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -3413,7 +3452,20 @@
             <Description>TXT_KEY_IMPROVEMENT_PASTURE</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_PASTURE_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_PASTURE</ArtDefineTag>
-            <PrereqNatureYields/>
+            <PrereqNatureYields>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_SHEEP</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_CATTLE</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+            </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SHEEP</YieldType>
@@ -3534,7 +3586,24 @@
             <Description>TXT_KEY_IMPROVEMENT_PEN</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_PEN_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_PEN</ArtDefineTag>
-            <PrereqNatureYields/>
+            <PrereqNatureYields>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GOATS</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_PIGS</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_CHICKEN</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GEESE</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+            </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_GOATS</YieldType>
@@ -3844,6 +3913,17 @@
                     </YieldChanges>
                 </BonusTypeStruct>
                 <BonusTypeStruct>
+                    <BonusType>BONUS_WHEAT</BonusType>
+                    <bBonusMakesValid>1</bBonusMakesValid>
+                    <iDiscoverRand>0</iDiscoverRand>
+                    <YieldChanges>
+                        <YieldIntegerPair>
+                            <YieldType>YIELD_FOOD</YieldType>
+                            <iValue>2</iValue>
+                        </YieldIntegerPair>
+                    </YieldChanges>
+                </BonusTypeStruct>
+                <BonusTypeStruct>
                     <BonusType>BONUS_PUMPKIN</BonusType>
                     <bBonusMakesValid>1</bBonusMakesValid>
                     <iDiscoverRand>0</iDiscoverRand>
@@ -4085,7 +4165,7 @@
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_PLAINS_FERTILE</TerrainType>
-                    <bMakesValid>0</bMakesValid>
+                    <bMakesValid>1</bMakesValid>
                 </TerrainMakesValid>
                 <TerrainMakesValid>
                     <TerrainType>TERRAIN_MARSH</TerrainType>
@@ -4306,6 +4386,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -4542,6 +4626,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
@@ -5861,7 +5949,20 @@
             <Description>TXT_KEY_IMPROVEMENT_LARGE_PASTURE</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_LARGE_PASTURE_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_LARGE_PASTURE</ArtDefineTag>
-            <PrereqNatureYields/>
+            <PrereqNatureYields>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_SHEEP</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_CATTLE</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+            </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_SHEEP</YieldType>
@@ -5982,7 +6083,24 @@
             <Description>TXT_KEY_IMPROVEMENT_LARGE_PEN</Description>
             <Civilopedia>TXT_KEY_IMPROVEMENT_LARGE_PEN_PEDIA</Civilopedia>
             <ArtDefineTag>ART_DEF_IMPROVEMENT_LARGE_PEN</ArtDefineTag>
-            <PrereqNatureYields/>
+            <PrereqNatureYields>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GOATS</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_PIGS</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_CHICKEN</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+                <YieldIntegerPair>
+                    <YieldType>YIELD_GEESE</YieldType>
+                    <iValue>1</iValue>
+                </YieldIntegerPair>
+            </PrereqNatureYields>
             <YieldIncreases>
                 <YieldIntegerPair>
                     <YieldType>YIELD_GOATS</YieldType>
@@ -7064,6 +7182,10 @@
                 </FeatureMakesValid>
                 <FeatureMakesValid>
                     <FeatureType>FEATURE_LUSHGRASS</FeatureType>
+                    <bMakesValid>0</bMakesValid>
+                </FeatureMakesValid>
+                <FeatureMakesValid>
+                    <FeatureType>FEATURE_WILD_FLOWERS</FeatureType>
                     <bMakesValid>0</bMakesValid>
                 </FeatureMakesValid>
                 <FeatureMakesValid>
